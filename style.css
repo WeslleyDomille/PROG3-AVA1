@@ -1,0 +1,223 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat;
+}
+
+nav {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0 5%;
+    height: 100px;
+    background-color: #f32e37;
+}
+
+.logo {
+    float: left;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    text-shadow: 2px 1px 2.5px #141b20;
+}
+
+.links {
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links li {
+    list-style: none;
+}
+
+.links a {
+    display: block;
+    padding: 1em;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: 2px 1px 2.5px #141b20;
+}
+
+.links a:hover {
+    background-color: white;
+    color: #f32e37;
+    border-radius: 30px;
+    transition-duration: 0.2s;
+    text-shadow: none;
+}
+
+.container {
+    padding-top: 100px;
+    padding-bottom: 10px;
+}
+.slider-wrapper {
+    position: relative;
+    margin: 0 auto;
+
+}
+.slider {
+    display: flex;
+    aspect-ratio: 16/7;
+    margin:30px;
+    border-radius: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    overflow: hidden;
+    /* border-radius: 0.5rem; */
+}
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+.slider-nav a {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #c7d7de8f;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+.slider-nav a:hover {
+    background-color: #f32e37;
+}
+
+.infobox {
+    background-color: #BACED5;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 40px;
+    text-align: justify;
+    
+}
+.infobox img {
+    width: 3rem;
+    padding: 2rem;
+}
+.info {
+    display: block;
+}
+.info h4 {
+    color: #141b20;
+    font-size: 1.2rem;
+}
+
+#menu {
+    font-size: 60px;
+    font-family: Montserrat;
+    margin-top: 20px;
+    text-align: center;
+    padding-left: 3rem;
+    text-shadow: 1px 1px 5px #00000080;
+}
+#about {
+    font-size: 40px;
+    font-family: Montserrat;
+    margin-top: 125px;
+    text-align: left;
+    padding-left: 3rem;
+    text-shadow: 1px 1px 5px #00000080;
+}
+
+main {
+    max-width: 1500px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article {
+    text-align: center;
+    border-radius: 60px;
+    max-width: 400px;
+    padding: 20px;
+    margin: 20px;
+    background: #141b20;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article>h1 {
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 6px;
+}
+
+article>h1 {
+    padding: 6px;
+    margin: 30px;
+    font-family: Montserrat;
+    font-size: x-large;
+}
+
+article>p {
+    color: white;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: medium;
+}
+
+article>img {
+    border-style: dashed;
+    border-color: rgb(255, 0, 0);
+    border-bottom: 1px;
+    border-radius: 9999px;
+    padding: 6px;
+    width: 250px;
+    height: 250px;
+}
+
+footer>p{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-color: #141b20;
+    color: #ffffff;
+    padding: 25px;
+    margin-top: 5px;
+    border-radius: 0px 0px 10px 10px;
+}
+.side >p {
+    padding: 30px 100px 30px 100px;
+    font-size: 20px;
+    
+}
+#FooterAbout{
+    margin-top: 100%;
+    background-color: #141b20;
+}
+#about {
+    text-align: center;
+    padding-left: 40px; 
+    margin-bottom: 20px;
+}
